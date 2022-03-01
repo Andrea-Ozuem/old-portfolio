@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrea's Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:00,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="flex">
+        <div>
+            <img src="images/dev-andrea .png" alt="">
+        </div>
+
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a  class="nav__link" href="#home">Home</a></li> 
+                <li class="nav__item"><a  class="nav__link" href="#about">About</a></li> 
+                <li class="nav__item"><a  class="nav__link" href="#portfolio">Portfolio</a></li>       
+                <li class="nav__item"><a  class="nav__link" href="#contact">Contact</a></li>     
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- intro -->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">Hi, I am <p class="name"> Ozuem Andrea</p></h1>
+
+            <p class="section__subtitle section__subtitle--intro"> STUDENT + WEB DESIGNER</p>
+            <img src="images/profile.jpg" alt="female avatar" width="330px" height="300px" class="intro__img">
+        </section>
+        
+        
+        <!-- services -->
+        <section class="my-services" id="services">
+            <h2 class="section__title section__title--services">Services</h2>
+            <div class="services">
+                <div class="do service">
+                    <h3>What I Do</h3>
+                    <ul>
+                        <li>I develop websites using <span id="tools">HTML, CSS, JavaScript</span></li>
+                        <li>I brainstorm ideas and design the flow of a website</li>
+                    </ul>
+                </div>
+  
+                <div class="plan-to-do service">
+                    <h3>Where I am Going</h3>
+                    <ul>
+                        <li>I aim to gain expertise in JavaScript as well as learn a JavaScript framework - React</li>
+                        <li>I plan on diving into Web3 space as well as creating dapps(decentralised apps)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <!-- about me -->
+        <section class="about-me" id="about">
+            <h2 class="section__title section__title--about">About Me</h2>
+            <p class="section__subtitle section__subtitle--about">Designer and student in Nigeria</p>
+
+            <div class="about-me__body"> 
+                <p>
+                    I am Ozuem Andrea Chukwunomswe. I am a first year student at the University of Port Harcourt and I use my freetime learning Frontend Development skills - HTML, CSS and JavaScript.
+                    I aim to build expertise using these technologies. I am on the path of being certified by <span id="afrofem">AfroFem Coders </span> while I gain experience and expand my portfolio
+                </p>
+            </div>
+            
+            <img src="images/profilr-pic2.JPG" alt="" width="400" height="300" class="about-me__img"> 
+        </section>
+
+        <!-- Portfolio -->
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <div class="portfolio">
+                <a href="">
+                <img src="images/rgb-game.png" alt="screenshot of RGB guessing game">
+                </a>
+                </div>
+                <div class="portfolio-item">
+                    <h4>Project description</h4>
+                    <p>During my Introduction to Web Development class by <span id="afrofem">AfroFem Coders </span>, with the aid of the instructot, I was able to design
+                    a color guessing game. It's working principle is on the RGB values whereby a player or user guesses a color from randomly generated RGB values
+                    It has 2 levels - Easy and Hard. With the easy level having three colour tiles to choose from while the Hard level has six.
+                    </p>
+                </div>
+            </div>
+            
+            
+        </section>
+        <hr>
+        <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title">Contact me</h2>
+            <div class="contact-content">
+                <div class="column left">
+                    <div class="text">Get in Touch</div>
+                    <p>I am available to work on your projects and bring your ideas to life. I am just a click away.</p>
+                    <div class="icons">
+                        <div class="row">
+                            <i class="fas fa-user"></i>
+                            <div class="info">
+                                <div class="head">Name</div>
+                                <div class="sub-title">Ozuem Andrea</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="info">
+                                <div class="head">Address</div>
+                                <div class="sub-title">Abuja, Nigeria</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-envelope"></i>
+                            <div class="info">
+                                <div class="head">Email</div>
+                                <div class="sub-title">andreaozuem@gmail.com</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column right">
+                    <div class="text">Message me</div>
+                    <form action="#">
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="text" placeholder="Name" required>
+                            </div>
+                            <div class="field email">
+                                <input type="email" placeholder="Email" required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <input type="text" placeholder="Subject" required>
+                        </div>
+                        <div class="field textarea">
+                            <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
+                        </div>
+                        <div class="button-area">
+                            <button type="submit">Send message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <footer class="footer">
+            <p>
+                Created By Andrea | 2020 All rights reserved.
+            </p> 
+            <ul class="social-list">
+                <li class="social-list__items">
+                    <a href="https://github.com/andrea-ozuem">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li class="social-list__items">
+                    <a href="https://instagram.com">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </main>
+    <script src="index.js" defer></script>
+</body>
+</html>
